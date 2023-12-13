@@ -1,0 +1,93 @@
+{
+    "inputMode": "Text",
+    "sessionId": "666550566238968",
+    "inputTranscript": "yes",
+    "interpretations": [
+        {
+            "interpretationSource": "Lex",
+            "nluConfidence": 1.0,
+            "intent": {
+                "confirmationState": "Confirmed",
+                "name": "healthInsuranceProvider",
+                "slots": {
+                    "insuranceProvider": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "atena",
+                            "resolvedValues": [],
+                            "interpretedValue": "atena"
+                        }
+                    }
+                },
+                "state": "ReadyForFulfillment"
+            }
+        },
+        {
+            "interpretationSource": "Lex",
+            "intent": {
+                "confirmationState": "None",
+                "name": "FallbackIntent",
+                "slots": {},
+                "state": "ReadyForFulfillment"
+            }
+        },
+        {
+            "interpretationSource": "Lex",
+            "nluConfidence": 0.43,
+            "intent": {
+                "confirmationState": "None",
+                "name": "GreetingUser",
+                "slots": {},
+                "state": "ReadyForFulfillment"
+            }
+        },
+        {
+            "interpretationSource": "Lex",
+            "nluConfidence": 0.2,
+            "intent": {
+                "confirmationState": "None",
+                "name": "getQuery",
+                "slots": {"id": "None", "table": "None"},
+                "state": "ReadyForFulfillment"
+            }
+        }
+    ],
+    "bot": {
+        "aliasId": "TSTALIASID",
+        "aliasName": "TestBotAlias",
+        "name": "chat2queryBOT",
+        "version": "DRAFT",
+        "localeId": "en_US",
+        "id": "PSZ1VQK64B"
+    },
+    "responseContentType": "text/plain; charset=utf-8",
+    "sessionState": {
+        "originatingRequestId": "0ed7d5ec-022a-4b4f-9b70-4241418e2feb",
+        "sessionAttributes": {},
+        "intent": {
+            "confirmationState": "Confirmed",
+            "name": "healthInsuranceProvider",
+            "slots": {
+                "insuranceProvider": {
+                    "shape": "Scalar",
+                    "value": {
+                        "originalValue": "Cigna",
+                        "resolvedValues": [],
+                        "interpretedValue": "atena"
+                    }
+                }
+            },
+            "state": "ReadyForFulfillment"
+        }
+    },
+    "messageVersion": "1.0",
+    "invocationSource": "FulfillmentCodeHook",
+    "transcriptions": [
+        {
+            "resolvedContext": {"intent": "healthInsuranceProvider"},
+            "resolvedSlots": {},
+            "transcriptionConfidence": 1.0,
+            "transcription": "yes"
+        }
+    ]
+}
